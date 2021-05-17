@@ -1,0 +1,86 @@
+.burger{
+   width: 50px;
+   height: 28.5px;
+   z-index: 2;
+
+   display: none;
+   @media (max-width:$md3 + px){
+         display: block;
+          
+      }
+   margin-top: 10px;
+   &__body{
+      content: '';
+      width:104vw;
+      display: none;
+      height: 500px;
+      // opacity: .8;
+      padding-top: 60px;
+      top: -1%;
+      left: -5%;
+      right: 10%;
+      
+      
+      position: absolute;
+      background-color: rgba(136, 34, 119, 0.336);
+      // text-align: center;
+      list-style-type: none;
+      text-decoration: none;
+      text-align: center;
+      .list__item{
+         .list__first{
+            line-height: 60px;
+         }
+         .list__item__link{
+            text-decoration: none;
+            line-height: 3;
+            padding-top: 20px;
+            color: rgb(67, 45, 119);
+           text-transform: uppercase;
+            
+         }
+      }
+
+     
+   }
+&__view{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+   position: relative;
+   z-index: 5;
+   
+}
+
+
+
+   &__span{
+      content: "";
+      width: 40px;
+      display: block;
+      height: 7px;
+      // position: absolute;
+      background-color: #000;
+   }
+   //  &__span.__top, &__span.__bottom{
+   //      transition: all 2s ease 0 ;
+   //  }
+   &__span.__top._active{
+      transform: rotate(45deg);
+     position: absolute;
+      bottom: 11px;
+   }
+   &__span.__bottom._active{
+      transform: rotate(-45deg);
+      position: absolute;
+      bottom: 11px;
+   }
+}
+
+ .burger__span.__top._active, .burger__span.__bottom._active{
+        transition: transform  0.4s cubic-bezier(0.29, 1.41, 0.63,-0.12)  ;
+    }
+.burger__span.__top,.burger__span.__bottom{
+         transition: transform  0.3s
+}
