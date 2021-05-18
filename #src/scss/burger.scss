@@ -17,12 +17,12 @@
       // opacity: .8;
       padding-top: 60px;
       top: -1%;
-      left: -5%;
+      left: 0%;
       right: 10%;
       
       
       position: absolute;
-      background-color: rgba(136, 34, 119, 0.336);
+      background-color: rgb(218, 194, 214);
       // text-align: center;
       list-style-type: none;
       text-decoration: none;
@@ -35,12 +35,14 @@
             text-decoration: none;
             line-height: 3;
             padding-top: 20px;
-            color: rgb(67, 45, 119);
+            color: rgb(156, 129, 224);
            text-transform: uppercase;
             
          }
       }
-
+      .last__item{
+display: none;
+      }
      
    }
 &__view{

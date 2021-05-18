@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
    <meta charset="UTF-8">
@@ -10,7 +10,37 @@
    <title>Document</title>
 </head>
 
-<body> @@include("_header.html")
+<body> @@include("_header.html") <div class="looking">
+      <div class="looking__container">
+         <h4 class="looking__header">What are you looking for?</h4>
+         <div class="looking__Choice">
+            <div class="looking__selects">
+               <div class="looking__box-select">
+                  <select class="looking__select" name="" id="">
+                     <option selected value="1">Dubai</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+               </div>
+               <div class="looking__box-select">
+                  <select class="looking__select" name="" id="">
+                     <option selected value="3">Education</option>
+                     <option value="4">5</option>
+                     <option value="5">6</option>
+                  </select>
+               </div>
+            </div>
+            <div class="looking__input">
+               <input type="text" placeholder="Keyword, name, date, ...">
+            </div>
+            <div class="looking__submit">
+               <button class="looking__submit-item">
+                  serach
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
    <script src="js/script.js"></script>
 </body>
 
